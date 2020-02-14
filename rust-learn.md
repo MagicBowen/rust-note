@@ -128,7 +128,6 @@ summary:
 ## lifecycle
 
 - lifecycle标记法？
-
 - 模板参数与lifecycle标记耦合在一起？
 
 ## coroutine
@@ -136,7 +135,9 @@ summary:
 - [rust 异步IO](https://zhuanlan.zhihu.com/p/52538218)
 - [rust coroutine](https://zhuanlan.zhihu.com/p/97574385)
 - [协程介绍](https://blog.csdn.net/hyman_yx/article/details/52251261)
+- [理解coroutine](http://anruence.com/2018/01/22/coroutine/)
 - [协程对比](https://www.zhihu.com/question/65647171)
+- [Kotlin coroutine解析](https://www.jianshu.com/p/2659bbe0df16)
 - [C++ 协程的近况、设计与实现中的细节和决策](https://www.jianshu.com/p/837bb161793a)
 
 ## tutorials
