@@ -1,0 +1,52 @@
+[package]
+name = "str2num"
+version = "0.1.0"
+authors = ["MagicBowen <e.bowen.wang@icloud.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[profile.dev]
+opt-level = 1      
+overflow-checks = true
+incremental = true
+lto = false
+
+[profile.release]
+opt-level = 3
+debug = false
+debug-assertions = false
+overflow-checks = false
+lto = true
+incremental = false
+
+[profile.test]
+opt-level = 0
+debug = 2
+debug-assertions = true
+overflow-checks = true
+lto = false
+
+[profile.bench]
+opt-level = 3
+debug = false
+debug-assertions = false
+overflow-checks = false
+lto = false
+panic = 'unwind'
+incremental = false
+codegen-units = 16
+rpath = false
+
+# [profile.dev.package.rand]
+# opt-level = 1
+
+[dependencies]
+num-bigint = "0.2"
+
+[dev_dependencies]
+rand = "0.7"
+
+# [build-dependencies]
+# autocfg = "1"
+

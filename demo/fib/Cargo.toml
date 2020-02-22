@@ -1,0 +1,15 @@
+[package]
+name = "fib"
+version = "0.1.0"
+authors = ["MagicBowen <e.bowen.wang@icloud.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[workspace]
+members = ["str2num"]
+
+[dependencies]
+regex = "1"
+str2num = {path = "str2num", version = "0.1.0"}
+
